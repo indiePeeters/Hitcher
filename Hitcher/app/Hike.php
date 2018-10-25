@@ -6,15 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Hike extends Model
 {
+    protected $table = 'hikes';
+    public $incrementing = true;
     protected $fillable = [
-        'latFrom',
-        'longFrom',
-        'latTo',
-        'longTo',
         'destination',
         'numberOfHikers',
         'moneySaved',
         'distance',
+        'starttime',
+        'endtime',
         'preventedCarbonImpact',
     ];
 
@@ -23,7 +23,19 @@ class Hike extends Model
         return $this->belongsToMany('App\Hitcher');
     }
 
-    public function hotspot(){
+    public function hitch_hotspot(){
         return $this->belongsTo('App\HitchHotspot');
+    }
+
+    public function calculatePreventedCarbonImpact(){
+        $this->preventedCarbonImpact = $this->distance * 0.18;
+    }
+
+    public function calculateMoneySaved(){
+        return null;
+    }
+
+    public function calculateDistance(){
+        return null;       
     }
 }

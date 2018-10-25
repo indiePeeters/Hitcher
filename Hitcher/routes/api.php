@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/hike', 'HikeController@startHike');
+Route::put('/hike', 'HikeController@endHike');
+
+Route::get('/hikeplanner/calculateRoute/main/{departureLocation}/{destinationLocation}', 'HikePlannerController@calculateRouteMain' );
+Route::get('/hikeplanner/calculateRoute/hotspot', 'HikePlannerController@calculateRouteToHotspot' );
+Route::get('/hikeplanner/suggestions', 'HikePlannerController@getLocationSugestions');
+

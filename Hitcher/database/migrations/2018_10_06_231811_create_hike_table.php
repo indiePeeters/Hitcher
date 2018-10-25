@@ -15,17 +15,17 @@ class CreateHikeTable extends Migration
     {
         Schema::create('hikes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('hitchhotspot_id')->unsigned();;
-            $table->float('latTo',9,6);
-            $table->float('longTo',9,6);
+            $table->integer('hitch_hotspot_id')->unsigned();
             $table->string('destination');
             $table->integer('numberOfHikers');
             $table->integer('moneySaved');
             $table->integer('distance');
+            $table->timestamp('starttime')->nullable();
+            $table->timestamp('endtime')->nullable();
             $table->integer('preventedCarbonImpact');
             $table->timestamps();
 
-            $table->foreign('hitchhotspot_id')->references('id')->on('hitch_hotspots');
+            $table->foreign('hitch_hotspot_id')->references('id')->on('hitch_hotspots');
         });
     }
 

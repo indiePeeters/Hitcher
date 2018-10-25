@@ -1,66 +1,52 @@
 <?php namespace App\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
-use app\Hike;
+use App\Hike;
 
 
 class HikeRepository implements RepositoryInterface
 {
-    // model property on class instances
-
-    // Constructor to bind model to repo
-    public function __construct(Model $model)
-    {
-        $this->model = $model;
-    }
-
-    // Get all instances of model
-    public function all()
-    {
-        return $this->model->all();
-    }
-
-    // create a new record in the database
     public function create(array $data)
     {
-        return $this->model->create($data);
+        $hike = new Hike();
+        $hike->hitch_hotspot()->associate($data['hotspot']);
+        $hike->destination = $data['destination'];
+        $hike->numberOfHikers = $data['numberOfHikers'];
+        $hike->moneySaved = $data['moneySaved'];
+        $hike->distance = $data['distance'];
+        $hike->starttime = $data['starttime'];
+        $hike->preventedCarbonImpact = $data['preventedCarbonImpact'];
+        $hike->endtime = $data['endtime'];
+        $hike->save();
+        return $hike;
     }
 
-    // update record in the database
-    public function update(array $data, $id)
+    public function update($id, array $data)
     {
-        $record = $this->find($id);
-        return $record->update($data);
+        $hike = $this->find($id);
+        $hike->update($data);
+        $hike->save();
+        return $hike;  
     }
 
-    // remove record from the database
     public function delete($id)
     {
-        return $this->model->destroy($id);
+        Hike::destroy($id);
     }
 
-    // show the record with the given id
-    public function show($id)
+    public function find($id, $columns = array('*'))
     {
-        return $this->model-findOrFail($id);
+        return $this->findBy('id', $id, $columns)->first();
     }
 
-    // Get the associated model
-    public function getModel()
+    public function findBy($field, $value, $columns = array('*'))
     {
-        return $this->model;
+        return Hike::where($field, '=',$value)->orderBy('id', 'desc')->get($columns);
     }
 
-    // Set the associated model
-    public function setModel($model)
+    public function all($columns = array('*'))
     {
-        $this->model = $model;
-        return $this;
+        return Hike::query()->orderBy('id', 'desc')->get();
     }
 
-    // Eager load database relationships
-    public function with($relations)
-    {
-        return $this->model->with($relations);
-    }
 }

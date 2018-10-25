@@ -12,5 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('hikeplanner');
+});
+
+Route::get('/register', function(){
+    return view('register');
+} );
+
+Route::get('/login', function(){
+    return view('login');
+});
+
+Route::get('/hikeplanner',function(){
+    return view('hikeplanner');
+});
+
+Route::get('/newhike',function(){
+    return view('newhike');
+});
+
+Route::get('/recenthikes',function(){
+    return view('newhike');
 });

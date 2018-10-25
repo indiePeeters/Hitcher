@@ -16,9 +16,7 @@ use Faker\Generator as Faker;
 $factory->define(App\Hike::class, function (Faker $faker) 
 {
     return [
-        'hitchhotspot_id' => factory(App\HitchHotspot::class)->create()->id,
-        'latTo' => $faker->latitude($min = -90, $max = 90),
-        'longTo' => $faker->longitude($min = -180, $max = 180),
+        'hitch_hotspot_id' => factory(App\HitchHotspot::class)->create()->id,
         'destination' => $faker->city,
         'numberOfHikers' => $faker->numberBetween(0,5),
         'moneySaved' => $faker->numberBetween(0,1000),

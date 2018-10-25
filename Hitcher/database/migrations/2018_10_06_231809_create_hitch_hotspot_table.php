@@ -17,7 +17,7 @@ class CreateHitchHotspotTable extends Migration
             $table->increments('id');
             $table->float('lat',9,6);
             $table->float('long',9,6);
-            $table->integer('averageTime');
+            $table->integer('averageTime')->nullable();
             $table->timestamps();
         });
     }

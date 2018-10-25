@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Hitcher extends Model
 {
-
+    protected $table = 'hitchers';
+    public $incrementing = true;
     protected $fillable = [
         'name',
         'password',
@@ -24,5 +25,9 @@ class Hitcher extends Model
     public function hikes()
     {
         return $this->belongsToMany('App\Hike');
+    }
+
+    public function newHike(){
+        
     }
 }
