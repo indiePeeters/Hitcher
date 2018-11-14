@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Hikeplanner"
+            android:icon="@mipmap/road"
+            android:title="Hikeplanner"/>
+        <item
+            android:id="@+id/nav_newHike"
+            android:icon="@mipmap/thumb"
+            android:title="Start new Hike" />
+        <item
+            android:id="@+id/nav_recentHikes"
+            android:icon="@mipmap/stats"
+            android:title="Recent Hikes" />
+    </group>
+
+</menu>
