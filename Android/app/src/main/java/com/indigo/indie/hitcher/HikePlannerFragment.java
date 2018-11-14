@@ -5,6 +5,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.graphics.Point;
+import android.location.Location;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
@@ -31,7 +32,7 @@ import com.here.android.mpa.mapping.MapView;
 
 public class HikePlannerFragment extends Fragment {
 
-    Activity activity;
+    MainActivity activity;
     View currentView;
     private MapView m_mapView;
     private Map m_map;
@@ -50,7 +51,7 @@ public class HikePlannerFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         try {
-            this.activity = (Activity) activity;
+            this.activity = (MainActivity) activity;
         } catch (ClassCastException e) {}
     }
 
@@ -128,9 +129,13 @@ public class HikePlannerFragment extends Fragment {
                         if (error == Error.NONE) {
                             /* get the map object */
                             m_map = new Map();
-                            m_map.setCenter(new GeoCoordinate(52.5159, 13.3777), Map.Animation.LINEAR);
-                            m_map.
                             m_mapView.setMap(m_map);
+                            Location currentLocation = activity.getCurrentLocation();
+                            if(currentLocation != null) {
+                                m_map.setCenter(new GeoCoordinate(currentLocation.getLatitude(), currentLocation.getLongitude()), Map.Animation.NONE);
+                            } else{
+                                m_map.setCenter(new GeoCoordinate(52.520008,13.404954), Map.Animation.NONE);
+                            }
                         } else {
                             Toast.makeText(activity.getApplicationContext(), error.name(),
                                     Toast.LENGTH_SHORT).show();
