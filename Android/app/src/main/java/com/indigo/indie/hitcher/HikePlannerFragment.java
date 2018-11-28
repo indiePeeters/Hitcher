@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Point;
 import android.location.Location;
 import android.os.Bundle;
@@ -111,16 +114,21 @@ public class HikePlannerFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        m_mapView.onResume();
+        if(m_mapView != null) {
+            m_mapView.onResume();
+        }
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        m_mapView.onPause();
+        if(m_mapView != null) {
+            m_mapView.onPause();
+        }
     }
 
-    private void initMap() {
+
+    public void initMap() {
         m_mapView = currentView.findViewById(R.id.here_map);
         MapEngine.getInstance().init(activity.getApplicationContext(),
                 new OnEngineInitListener() {
@@ -128,7 +136,9 @@ public class HikePlannerFragment extends Fragment {
                     public void onEngineInitializationCompleted(Error error) {
                         if (error == Error.NONE) {
                             /* get the map object */
-                            m_map = new Map();
+                            if(m_map == null) {
+                                m_map = new Map();
+                            }
                             m_mapView.setMap(m_map);
                             Location currentLocation = activity.getCurrentLocation();
                             if(currentLocation != null) {
