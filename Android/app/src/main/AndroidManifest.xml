@@ -16,6 +16,7 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:screenOrientation="portrait"
         android:hardwareAccelerated="true">
         <activity
             android:name=".MainActivity"
@@ -23,13 +24,13 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <meta-data android:name="com.here.android.maps.appid" android:value="YiZOt8Q5tGW1eKV3DUo8"/>
         <meta-data android:name="com.here.android.maps.apptoken" android:value="lVx4jUvlre-Kv2MPUYOmuA"/>
-
+        <service android:name=".timerService"/>
+        <service android:name=".locationService"/>
     </application>
 
 </manifest>

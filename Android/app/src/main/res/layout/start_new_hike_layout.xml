@@ -13,7 +13,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Start new Hike"
+        android:text="Where are you hitchhiking to?"
+        android:textSize="21sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,17 +46,20 @@
             android:onClick="startHike" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinNumberOfHikers"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
             android:layout_width="241dp"
             android:layout_height="40dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:hint="Number of hikers"
+            android:ems="10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.032"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:theme="@style/ThemeSpinner" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -85,7 +89,6 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/colorPrimary"
-            android:ems="10"
             android:hint="Destination"
             android:inputType="textPersonName"
             android:textColor="@color/TextColor"
@@ -93,7 +96,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+            app:layout_constraintTop_toBottomOf="@+id/spinNumberOfHikers" />
 
     </android.support.constraint.ConstraintLayout>
 

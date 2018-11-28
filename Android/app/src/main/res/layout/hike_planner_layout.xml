@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="portrait"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.indigo.indie.hitcher.MainActivity"
     tools:showIn="@layout/app_bar_main">
@@ -54,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFrom" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -76,7 +77,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtTo"/>
 
 
 </android.support.constraint.ConstraintLayout>
