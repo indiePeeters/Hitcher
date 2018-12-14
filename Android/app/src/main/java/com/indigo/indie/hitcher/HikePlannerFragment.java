@@ -68,7 +68,7 @@ public class HikePlannerFragment extends Fragment {
                 TextView txtTo = currentView.findViewById(R.id.txtTo);
 
                 if(txtFrom.getText() != "" && txtTo.getText() != ""){
-                    calculateRoute(v, (String)txtFrom.getText(),(String)txtTo.getText());
+                    calculateRoute(v, txtFrom.getText().toString(),txtTo.getText().toString());
                 }
             }
         });
@@ -232,12 +232,24 @@ public class HikePlannerFragment extends Fragment {
         hitchHotspotList.add(new HitchHotspot("Amsterdam",51.459858, 5.485761, 981));
         hitchHotspotList.add(new HitchHotspot("Amsterdam",51.444549, 5.441764, 1234));
 
+        //add Hitchhotspot to map and auto-select the first hotspot.
+        int index = 0;
         for (HitchHotspot hotspot : hitchHotspotList) {
-            MapMarker mapMarker = new MapMarker(new GeoCoordinate(hotspot.getLatitude(), hotspot.getLongitude()), marker);
-            mapMarker = mapMarker.setAnchorPoint(new PointF(marker.getWidth()/2, marker.getHeight()));
+            MapMarker mapMarker;
+            if(index == 0){
+                mapMarker = new MapMarker(new GeoCoordinate(hotspot.getLatitude(), hotspot.getLongitude()), markerSelected);
+                mapMarker = mapMarker.setAnchorPoint(new PointF(marker.getWidth()/2, markerSelected.getHeight()));
+
+            } else {
+                mapMarker = new MapMarker(new GeoCoordinate(hotspot.getLatitude(), hotspot.getLongitude()), marker);
+                mapMarker = mapMarker.setAnchorPoint(new PointF(marker.getWidth()/2, marker.getHeight()));
+
+            }
             mapObjects.add(mapMarker);
             m_map.addMapObject(mapMarker);
+            index++;
         }
+        openPanel(hitchHotspotList.get(0));
         rm.calculateRoute(routePlan, new RouteListener());
 
         //add map gesture for selecting mapMarkers
