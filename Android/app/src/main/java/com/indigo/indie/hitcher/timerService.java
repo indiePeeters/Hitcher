@@ -11,7 +11,7 @@ import org.locationtech.jts.util.Stopwatch;
  * Created by Indie on 11/23/2018.
  */
 
-public class timerService extends Service{
+public class TimerService extends Service{
 
     Stopwatch stopwatch = new Stopwatch();
 

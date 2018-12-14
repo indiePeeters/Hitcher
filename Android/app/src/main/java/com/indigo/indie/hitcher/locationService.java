@@ -16,7 +16,7 @@ import android.support.v4.content.LocalBroadcastManager;
  * Created by Indie on 11/23/2018.
  */
 
-public class locationService extends Service {
+public class LocationService extends Service {
     Location lastLocation;
     LocationManager locationManager = null;
     LocalBroadcastManager broadcastManager;

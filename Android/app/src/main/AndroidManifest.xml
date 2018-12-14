@@ -29,8 +29,8 @@
         </activity>
         <meta-data android:name="com.here.android.maps.appid" android:value="YiZOt8Q5tGW1eKV3DUo8"/>
         <meta-data android:name="com.here.android.maps.apptoken" android:value="lVx4jUvlre-Kv2MPUYOmuA"/>
-        <service android:name=".timerService"/>
-        <service android:name=".locationService"/>
+        <service android:name=".TimerService"/>
+        <service android:name=".LocationService"/>
     </application>
 
 </manifest>

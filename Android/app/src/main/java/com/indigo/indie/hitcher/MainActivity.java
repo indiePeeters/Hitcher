@@ -8,10 +8,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.LocalBroadcastManager;
@@ -135,10 +132,10 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void startLocationService(){
-        startService(new Intent(this, locationService.class));
+        startService(new Intent(this, LocationService.class));
     }
     public void startTimerService(){
-        startService(new Intent(this, timerService.class));
+        startService(new Intent(this, TimerService.class));
     }
 
 
