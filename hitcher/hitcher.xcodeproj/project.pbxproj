@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FEBFC1FC57270964C0200AA /* Pods_hitcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE227AC14E2FF3AAE140221 /* Pods_hitcherUITests.framework */; };
+		585FA35CE171E126EB9EFC0B /* Pods_hitcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BE09ABC0E0AEDCBDDF28F8 /* Pods_hitcherTests.framework */; };
+		78F023FBFEF84E0B8B228734 /* Pods_hitcher_hitcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7100761E132A06F39D1FCE20 /* Pods_hitcher_hitcherUITests.framework */; };
+		83085BEA21D012070033A21E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83085BE921D012070033A21E /* GoogleService-Info.plist */; };
+		83F07E4C21D009DC001FE02B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F07E4B21D009DC001FE02B /* AppDelegate.swift */; };
+		83F07E4E21D009DC001FE02B /* HikePlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F07E4D21D009DC001FE02B /* HikePlannerViewController.swift */; };
+		83F07E5121D009DC001FE02B /* HikePlanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F07E4F21D009DC001FE02B /* HikePlanner.storyboard */; };
+		83F07E5321D009DD001FE02B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F07E5221D009DD001FE02B /* Assets.xcassets */; };
+		83F07E5621D009DD001FE02B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F07E5421D009DD001FE02B /* LaunchScreen.storyboard */; };
+		83F07E6121D009DD001FE02B /* hitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F07E6021D009DD001FE02B /* hitcherTests.swift */; };
+		83F07E6C21D009DD001FE02B /* hitcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F07E6B21D009DD001FE02B /* hitcherUITests.swift */; };
+		83F07E8121D00B0D001FE02B /* HitchhotspotRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F07E8021D00B0D001FE02B /* HitchhotspotRepository.swift */; };
+		83F07E8521D00BA4001FE02B /* Hitchhotspot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F07E8321D00BA3001FE02B /* Hitchhotspot.swift */; };
+		83F07E8621D00BA4001FE02B /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F07E8421D00BA3001FE02B /* Hike.swift */; };
+		83F12AB221D26DCD0013BE7F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F12AB121D26DCD0013BE7F /* CoreLocation.framework */; };
+		941AB6C44D31456D4A5C038C /* Pods_hitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96135F774566561B83A90644 /* Pods_hitcher.framework */; };
+		E2E5894C0C2B978B702FD19B /* Pods_hitcher_hitcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1224A264C44CECC9903F03D3 /* Pods_hitcher_hitcherTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83D89C1521EC99900052C083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83F07E4021D009DB001FE02B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83F07E4721D009DB001FE02B;
+			remoteInfo = hitcher;
+		};
+		83F07E5D21D009DD001FE02B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83F07E4021D009DB001FE02B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83F07E4721D009DB001FE02B;
+			remoteInfo = hitcher;
+		};
+		83F07E6821D009DD001FE02B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83F07E4021D009DB001FE02B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83F07E4721D009DB001FE02B;
+			remoteInfo = hitcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04BE09ABC0E0AEDCBDDF28F8 /* Pods_hitcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hitcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		060476482B26F75D320AEF42 /* Pods-hitcher-hitcherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcher-hitcherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hitcher-hitcherUITests/Pods-hitcher-hitcherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1224A264C44CECC9903F03D3 /* Pods_hitcher_hitcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hitcher_hitcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3761AE1C0FD7E7E37FA22ADB /* Pods-hitcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hitcher/Pods-hitcher.debug.xcconfig"; sourceTree = "<group>"; };
+		38CD3DC9F584C4A1C217E221 /* Pods-hitcher-hitcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcher-hitcherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hitcher-hitcherTests/Pods-hitcher-hitcherTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A79FDDB4ADF91BCF389EF91 /* Pods-hitcher-hitcherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcher-hitcherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hitcher-hitcherUITests/Pods-hitcher-hitcherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4EE227AC14E2FF3AAE140221 /* Pods_hitcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hitcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8084A75205FC42D8AF591C /* Pods-hitcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hitcherTests/Pods-hitcherTests.release.xcconfig"; sourceTree = "<group>"; };
+		7100761E132A06F39D1FCE20 /* Pods_hitcher_hitcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hitcher_hitcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6C950C65A5727AB91B0369 /* Pods-hitcherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hitcherUITests/Pods-hitcherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		813B347C80B37AA41ADB6AE1 /* Pods-hitcherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hitcherUITests/Pods-hitcherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83085BE921D012070033A21E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83D89C1021EC99900052C083 /* hitchesarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hitchesarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F07E4821D009DB001FE02B /* hitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F07E4B21D009DC001FE02B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83F07E4D21D009DC001FE02B /* HikePlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikePlannerViewController.swift; sourceTree = "<group>"; };
+		83F07E5021D009DC001FE02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HikePlanner.storyboard; sourceTree = "<group>"; };
+		83F07E5221D009DD001FE02B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83F07E5521D009DD001FE02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83F07E5721D009DD001FE02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F07E5C21D009DD001FE02B /* hitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F07E6021D009DD001FE02B /* hitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hitcherTests.swift; sourceTree = "<group>"; };
+		83F07E6221D009DD001FE02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F07E6721D009DD001FE02B /* hitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F07E6B21D009DD001FE02B /* hitcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hitcherUITests.swift; sourceTree = "<group>"; };
+		83F07E6D21D009DD001FE02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F07E8021D00B0D001FE02B /* HitchhotspotRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HitchhotspotRepository.swift; path = "../../../../../ios/seats2eat-ios/Seats2Eat-iOS/Controllers/IOSBasics/Hitcher/Repository/HitchhotspotRepository.swift"; sourceTree = "<group>"; };
+		83F07E8321D00BA3001FE02B /* Hitchhotspot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hitchhotspot.swift; path = "../../../../../ios/seats2eat-ios/Seats2Eat-iOS/Controllers/IOSBasics/Hitcher/Models/Hitchhotspot.swift"; sourceTree = "<group>"; };
+		83F07E8421D00BA3001FE02B /* Hike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hike.swift; path = "../../../../../ios/seats2eat-ios/Seats2Eat-iOS/Controllers/IOSBasics/Hitcher/Models/Hike.swift"; sourceTree = "<group>"; };
+		83F12AB121D26DCD0013BE7F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		95903BBF9D728D9FAFD9C974 /* Pods-hitcher-hitcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcher-hitcherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hitcher-hitcherTests/Pods-hitcher-hitcherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96135F774566561B83A90644 /* Pods_hitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC5A9BC4C36D1309A26344D /* Pods-hitcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hitcherTests/Pods-hitcherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC6B0FBA57F469C57807E69A /* Pods-hitcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-hitcher/Pods-hitcher.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83D89C0D21EC99900052C083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F07E4521D009DB001FE02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F12AB221D26DCD0013BE7F /* CoreLocation.framework in Frameworks */,
+				941AB6C44D31456D4A5C038C /* Pods_hitcher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F07E5921D009DD001FE02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585FA35CE171E126EB9EFC0B /* Pods_hitcherTests.framework in Frameworks */,
+				E2E5894C0C2B978B702FD19B /* Pods_hitcher_hitcherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F07E6421D009DD001FE02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEBFC1FC57270964C0200AA /* Pods_hitcherUITests.framework in Frameworks */,
+				78F023FBFEF84E0B8B228734 /* Pods_hitcher_hitcherUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		532716C4AF209D742DD04E9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83F12AB121D26DCD0013BE7F /* CoreLocation.framework */,
+				96135F774566561B83A90644 /* Pods_hitcher.framework */,
+				04BE09ABC0E0AEDCBDDF28F8 /* Pods_hitcherTests.framework */,
+				4EE227AC14E2FF3AAE140221 /* Pods_hitcherUITests.framework */,
+				1224A264C44CECC9903F03D3 /* Pods_hitcher_hitcherTests.framework */,
+				7100761E132A06F39D1FCE20 /* Pods_hitcher_hitcherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83D89C0821D50DB70052C083 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83F07E4D21D009DC001FE02B /* HikePlannerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		83D89C0921D50DD70052C083 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83F07E5421D009DD001FE02B /* LaunchScreen.storyboard */,
+				83F07E4F21D009DC001FE02B /* HikePlanner.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83F07E3F21D009DB001FE02B = {
+			isa = PBXGroup;
+			children = (
+				83F07E4A21D009DB001FE02B /* hitcher */,
+				83F07E5F21D009DD001FE02B /* hitcherTests */,
+				83F07E6A21D009DD001FE02B /* hitcherUITests */,
+				83F07E4921D009DB001FE02B /* Products */,
+				E8B194E5C9E4EA18EA08602E /* Pods */,
+				532716C4AF209D742DD04E9C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83F07E4921D009DB001FE02B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83F07E4821D009DB001FE02B /* hitcher.app */,
+				83F07E5C21D009DD001FE02B /* hitcherTests.xctest */,
+				83F07E6721D009DD001FE02B /* hitcherUITests.xctest */,
+				83D89C1021EC99900052C083 /* hitchesarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83F07E4A21D009DB001FE02B /* hitcher */ = {
+			isa = PBXGroup;
+			children = (
+				83D89C0921D50DD70052C083 /* Views */,
+				83D89C0821D50DB70052C083 /* ViewControllers */,
+				83F07E8221D00B96001FE02B /* Models */,
+				83F07E7F21D00B00001FE02B /* Repository */,
+				83F07E4B21D009DC001FE02B /* AppDelegate.swift */,
+				83F07E5221D009DD001FE02B /* Assets.xcassets */,
+				83085BE921D012070033A21E /* GoogleService-Info.plist */,
+				83F07E5721D009DD001FE02B /* Info.plist */,
+			);
+			path = hitcher;
+			sourceTree = "<group>";
+		};
+		83F07E5F21D009DD001FE02B /* hitcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				83F07E6021D009DD001FE02B /* hitcherTests.swift */,
+				83F07E6221D009DD001FE02B /* Info.plist */,
+			);
+			path = hitcherTests;
+			sourceTree = "<group>";
+		};
+		83F07E6A21D009DD001FE02B /* hitcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83F07E6B21D009DD001FE02B /* hitcherUITests.swift */,
+				83F07E6D21D009DD001FE02B /* Info.plist */,
+			);
+			path = hitcherUITests;
+			sourceTree = "<group>";
+		};
+		83F07E7F21D00B00001FE02B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				83F07E8021D00B0D001FE02B /* HitchhotspotRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		83F07E8221D00B96001FE02B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83F07E8421D00BA3001FE02B /* Hike.swift */,
+				83F07E8321D00BA3001FE02B /* Hitchhotspot.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8B194E5C9E4EA18EA08602E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3761AE1C0FD7E7E37FA22ADB /* Pods-hitcher.debug.xcconfig */,
+				AC6B0FBA57F469C57807E69A /* Pods-hitcher.release.xcconfig */,
+				9DC5A9BC4C36D1309A26344D /* Pods-hitcherTests.debug.xcconfig */,
+				5E8084A75205FC42D8AF591C /* Pods-hitcherTests.release.xcconfig */,
+				813B347C80B37AA41ADB6AE1 /* Pods-hitcherUITests.debug.xcconfig */,
+				7B6C950C65A5727AB91B0369 /* Pods-hitcherUITests.release.xcconfig */,
+				95903BBF9D728D9FAFD9C974 /* Pods-hitcher-hitcherTests.debug.xcconfig */,
+				38CD3DC9F584C4A1C217E221 /* Pods-hitcher-hitcherTests.release.xcconfig */,
+				060476482B26F75D320AEF42 /* Pods-hitcher-hitcherUITests.debug.xcconfig */,
+				4A79FDDB4ADF91BCF389EF91 /* Pods-hitcher-hitcherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83D89C0F21EC99900052C083 /* hitchesarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83D89C1921EC99910052C083 /* Build configuration list for PBXNativeTarget "hitchesarTests" */;
+			buildPhases = (
+				83D89C0C21EC99900052C083 /* Sources */,
+				83D89C0D21EC99900052C083 /* Frameworks */,
+				83D89C0E21EC99900052C083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83D89C1621EC99900052C083 /* PBXTargetDependency */,
+			);
+			name = hitchesarTests;
+			productName = hitchesarTests;
+			productReference = 83D89C1021EC99900052C083 /* hitchesarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83F07E4721D009DB001FE02B /* hitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F07E7021D009DD001FE02B /* Build configuration list for PBXNativeTarget "hitcher" */;
+			buildPhases = (
+				0EA81078EF90884CDCEE9141 /* [CP] Check Pods Manifest.lock */,
+				83F07E4421D009DB001FE02B /* Sources */,
+				83F07E4521D009DB001FE02B /* Frameworks */,
+				83F07E4621D009DB001FE02B /* Resources */,
+				9F0733145BCEAE94E86F2015 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hitcher;
+			productName = hitcher;
+			productReference = 83F07E4821D009DB001FE02B /* hitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83F07E5B21D009DD001FE02B /* hitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F07E7321D009DD001FE02B /* Build configuration list for PBXNativeTarget "hitcherTests" */;
+			buildPhases = (
+				8F62EE560E683E7BA33D8A59 /* [CP] Check Pods Manifest.lock */,
+				83F07E5821D009DD001FE02B /* Sources */,
+				83F07E5921D009DD001FE02B /* Frameworks */,
+				83F07E5A21D009DD001FE02B /* Resources */,
+				9296E9A1222DFF17B7420D45 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83F07E5E21D009DD001FE02B /* PBXTargetDependency */,
+			);
+			name = hitcherTests;
+			productName = hitcherTests;
+			productReference = 83F07E5C21D009DD001FE02B /* hitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83F07E6621D009DD001FE02B /* hitcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F07E7621D009DD001FE02B /* Build configuration list for PBXNativeTarget "hitcherUITests" */;
+			buildPhases = (
+				27312D5A831FA10DA5D7D679 /* [CP] Check Pods Manifest.lock */,
+				83F07E6321D009DD001FE02B /* Sources */,
+				83F07E6421D009DD001FE02B /* Frameworks */,
+				83F07E6521D009DD001FE02B /* Resources */,
+				0F8A6B907AC08D3DB49D08CA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83F07E6921D009DD001FE02B /* PBXTargetDependency */,
+			);
+			name = hitcherUITests;
+			productName = hitcherUITests;
+			productReference = 83F07E6721D009DD001FE02B /* hitcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83F07E4021D009DB001FE02B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = fhict;
+				TargetAttributes = {
+					83D89C0F21EC99900052C083 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 83F07E4721D009DB001FE02B;
+					};
+					83F07E4721D009DB001FE02B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					83F07E5B21D009DD001FE02B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 83F07E4721D009DB001FE02B;
+					};
+					83F07E6621D009DD001FE02B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 83F07E4721D009DB001FE02B;
+					};
+				};
+			};
+			buildConfigurationList = 83F07E4321D009DB001FE02B /* Build configuration list for PBXProject "hitcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83F07E3F21D009DB001FE02B;
+			productRefGroup = 83F07E4921D009DB001FE02B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83F07E4721D009DB001FE02B /* hitcher */,
+				83F07E5B21D009DD001FE02B /* hitcherTests */,
+				83F07E6621D009DD001FE02B /* hitcherUITests */,
+				83D89C0F21EC99900052C083 /* hitchesarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83D89C0E21EC99900052C083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F07E4621D009DB001FE02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F07E5621D009DD001FE02B /* LaunchScreen.storyboard in Resources */,
+				83085BEA21D012070033A21E /* GoogleService-Info.plist in Resources */,
+				83F07E5321D009DD001FE02B /* Assets.xcassets in Resources */,
+				83F07E5121D009DC001FE02B /* HikePlanner.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F07E5A21D009DD001FE02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F07E6521D009DD001FE02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA81078EF90884CDCEE9141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hitcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F8A6B907AC08D3DB49D08CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hitcher-hitcherUITests/Pods-hitcher-hitcherUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hitcher-hitcherUITests/Pods-hitcher-hitcherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27312D5A831FA10DA5D7D679 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hitcher-hitcherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F62EE560E683E7BA33D8A59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hitcher-hitcherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9296E9A1222DFF17B7420D45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hitcher-hitcherTests/Pods-hitcher-hitcherTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hitcher-hitcherTests/Pods-hitcher-hitcherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F0733145BCEAE94E86F2015 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hitcher/Pods-hitcher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hitcher/Pods-hitcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83D89C0C21EC99900052C083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F07E4421D009DB001FE02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F07E8621D00BA4001FE02B /* Hike.swift in Sources */,
+				83F07E4E21D009DC001FE02B /* HikePlannerViewController.swift in Sources */,
+				83F07E8121D00B0D001FE02B /* HitchhotspotRepository.swift in Sources */,
+				83F07E8521D00BA4001FE02B /* Hitchhotspot.swift in Sources */,
+				83F07E4C21D009DC001FE02B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F07E5821D009DD001FE02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F07E6121D009DD001FE02B /* hitcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F07E6321D009DD001FE02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F07E6C21D009DD001FE02B /* hitcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83D89C1621EC99900052C083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83F07E4721D009DB001FE02B /* hitcher */;
+			targetProxy = 83D89C1521EC99900052C083 /* PBXContainerItemProxy */;
+		};
+		83F07E5E21D009DD001FE02B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83F07E4721D009DB001FE02B /* hitcher */;
+			targetProxy = 83F07E5D21D009DD001FE02B /* PBXContainerItemProxy */;
+		};
+		83F07E6921D009DD001FE02B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83F07E4721D009DB001FE02B /* hitcher */;
+			targetProxy = 83F07E6821D009DD001FE02B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83F07E4F21D009DC001FE02B /* HikePlanner.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83F07E5021D009DC001FE02B /* Base */,
+			);
+			name = HikePlanner.storyboard;
+			sourceTree = "<group>";
+		};
+		83F07E5421D009DD001FE02B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83F07E5521D009DD001FE02B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83D89C1721EC99910052C083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3A8ARAZP4A;
+				INFOPLIST_FILE = hitchesarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fhict.hitchesarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hitcher.app/hitcher";
+			};
+			name = Debug;
+		};
+		83D89C1821EC99910052C083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3A8ARAZP4A;
+				INFOPLIST_FILE = hitchesarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fhict.hitchesarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hitcher.app/hitcher";
+			};
+			name = Release;
+		};
+		83F07E6E21D009DD001FE02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83F07E6F21D009DD001FE02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83F07E7121D009DD001FE02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3761AE1C0FD7E7E37FA22ADB /* Pods-hitcher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3A8ARAZP4A;
+				INFOPLIST_FILE = hitcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indigo.hitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83F07E7221D009DD001FE02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6B0FBA57F469C57807E69A /* Pods-hitcher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3A8ARAZP4A;
+				INFOPLIST_FILE = hitcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indigo.hitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83F07E7421D009DD001FE02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95903BBF9D728D9FAFD9C974 /* Pods-hitcher-hitcherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fhict.hitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hitcher.app/hitcher";
+			};
+			name = Debug;
+		};
+		83F07E7521D009DD001FE02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38CD3DC9F584C4A1C217E221 /* Pods-hitcher-hitcherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fhict.hitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hitcher.app/hitcher";
+			};
+			name = Release;
+		};
+		83F07E7721D009DD001FE02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060476482B26F75D320AEF42 /* Pods-hitcher-hitcherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fhict.hitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hitcher;
+			};
+			name = Debug;
+		};
+		83F07E7821D009DD001FE02B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A79FDDB4ADF91BCF389EF91 /* Pods-hitcher-hitcherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fhict.hitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hitcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83D89C1921EC99910052C083 /* Build configuration list for PBXNativeTarget "hitchesarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D89C1721EC99910052C083 /* Debug */,
+				83D89C1821EC99910052C083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83F07E4321D009DB001FE02B /* Build configuration list for PBXProject "hitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F07E6E21D009DD001FE02B /* Debug */,
+				83F07E6F21D009DD001FE02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83F07E7021D009DD001FE02B /* Build configuration list for PBXNativeTarget "hitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F07E7121D009DD001FE02B /* Debug */,
+				83F07E7221D009DD001FE02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83F07E7321D009DD001FE02B /* Build configuration list for PBXNativeTarget "hitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F07E7421D009DD001FE02B /* Debug */,
+				83F07E7521D009DD001FE02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83F07E7621D009DD001FE02B /* Build configuration list for PBXNativeTarget "hitcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F07E7721D009DD001FE02B /* Debug */,
+				83F07E7821D009DD001FE02B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83F07E4021D009DB001FE02B /* Project object */;
+}

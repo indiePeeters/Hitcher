@@ -1,0 +1,6 @@
+framework module Pods_hitcher_hitcherUITests {
+  umbrella header "Pods-hitcher-hitcherUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
